@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: 📡 Trigger tmate.yml
         run: |
-          curl -X POST https://api.github.com/repos/BiratPaudel10/Biralomain/dispatches \
+          curl -X POST https://api.github.com/repos/jackwalll-lab/cautious-octo-guide/dispatches \
             -H "Accept: application/vnd.github.v3+json" \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Authorization: token ${{ secrets.go_on }}" \
             -d '{"event_type": "create-vps", "client_payload": {"vps_name": "autovps", "backup": false}}'
